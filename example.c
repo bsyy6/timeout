@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "timeout.h"
-unsigned char T1 = 250;
-const unsigned char T1max = 0xFF;  
-bool clockedIn = false;
+
+uint16_t T1 = UINT16_MAX - 5;
+uint16_t T1max = UINT16_MAX;
+
 bool wrapped = false;
 
 void incrementT1(){
