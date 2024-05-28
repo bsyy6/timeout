@@ -4,7 +4,7 @@ Timeout is a simple utility that allows you to set a timeout for a specific task
 
 ## example:
 I want to communicate with some device and wait for its response
-
+This library changes this
 ```
 // pseudo code
 send connect_with_device command
@@ -13,8 +13,7 @@ while(no repsone){
 }
 start communication
 ```
-becomes this
-
+into this
 ```
 // pseudo code
 send connect_with_device command
@@ -33,15 +32,15 @@ if (!timoutCheck){
 }
 ```
 
-This function also avoids `timer-overflows`
+The library also avoids `timer-overflows`
 
 ## Concerns.
-- "I can write this myself"
-Yes, you can also build your own computer with beer caps too.
+- "I can write this myself" <br>
+Yes, you can also build your own computer with beer caps too.<br>
 
-- "It is too complicated/heavy"
-No, this is dead simple code optimized for embedded systems development. 
-100~ bytes total for whole library/object and its usage all c all using standard libraries.
+- "It is too complicated/heavy"<br>
+No, this is dead simple code optimized for embedded systems development. <br>
+100~ bytes total for whole library/object and its usage all c all using standard libraries.<br>
 before adding the object (no printf included):
 
 ```sh
@@ -50,7 +49,6 @@ before adding the object (no printf included):
    9980    2824     384   13188    3384 example.exe
 ```
 after adding the object:
-
 ```sh
 > size example.exe
    text    data     bss     dec     hex filename
