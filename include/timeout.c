@@ -16,7 +16,6 @@ timeOutObj timeOutBegin(uint16_t* currentTimePtr,uint16_t delay, bool* wrapped){
     }else{
      to.wrapCycle = *wrapped;
     }
-    to.waitForTimerWrap = wrapped;
     to.currentWrapStatusPtr = wrapped;
     
     return (to);

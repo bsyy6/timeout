@@ -9,7 +9,6 @@ typedef struct{
     uint16_t *currentTimePtr;
     bool *currentWrapStatusPtr;
     uint16_t ttimeOut;
-    bool waitForTimerWrap;
     bool wrapCycle;
 } timeOutObj;
 
